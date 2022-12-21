@@ -1,4 +1,4 @@
-name: meier
+name: quickstart
 type: php
 docroot: Web
 php_version: "8.1"
