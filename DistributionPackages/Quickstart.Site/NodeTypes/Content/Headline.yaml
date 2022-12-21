@@ -1,0 +1,16 @@
+'Quickstart.Site:Content.Headline':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:TitleMixin': true
+  ui:
+    label: 'Headline'
+    icon: 'icon-header'
+    position: 100
+  properties:
+    'title':
+      ui:
+        inline:
+          editorOptions:
+            formatting:
+              h4: true
+              h5: true

@@ -1,0 +1,11 @@
+
+Neos:
+  Form:
+    presets:
+      default:
+        formElementTypes:
+          'Neos.Form:Form':
+            renderingOptions:
+              previousButtonClassAttribute: 'button secondary'
+              nextButtonClassAttribute: 'button secondary'
+              submitButtonClassAttribute: 'submit button'

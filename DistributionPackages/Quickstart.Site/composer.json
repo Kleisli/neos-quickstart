@@ -1,0 +1,24 @@
+{
+    "name": "quickstart/site",
+    "description": "A Neos website",
+    "type": "neos-site",
+    "require": {
+        "neos/neos": "*",
+        "neos/nodetypes-basemixins": "^8.0 || dev-master",
+        "neos/form-builder": "^2.3",
+        "neos/swiftmailer": "*"
+    },
+    "suggest": {
+        "neos/seo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Quickstart\\Site\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Quickstart.Site"
+        }
+    }
+}

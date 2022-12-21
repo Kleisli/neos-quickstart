@@ -1,0 +1,13 @@
+{
+  "name": "frontend-builder-proxy",
+  "version": "1.0.0",
+  "description": "Proxy configuration to be able to install and build the frontend from the project root.",
+  "author": "Till Kleisli <till@kleisli.ch>",
+  "license": "MIT",
+  "scripts": {
+    "install": "cd DistributionPackages/Quickstart.Site/Resources/Private/Frontend && npm install",
+    "postinstall": "cd DistributionPackages/Quickstart.Site/Resources/Private/Frontend && npm run build",
+    "watch": "cd DistributionPackages/Quickstart.Site/Resources/Private/Frontend && npm run watch",
+    "build": "cd DistributionPackages/Quickstart.Site/Resources/Private/Frontend && npm run build"
+  }
+}

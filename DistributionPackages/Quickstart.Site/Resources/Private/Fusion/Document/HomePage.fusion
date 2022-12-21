@@ -1,0 +1,6 @@
+prototype(Quickstart.Site:Document.HomePage) < prototype(Quickstart.Site:Document.AbstractPage){
+  body {
+    homePage = ${true}
+    content = ''
+  }
+}

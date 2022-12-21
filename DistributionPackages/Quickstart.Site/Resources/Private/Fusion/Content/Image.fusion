@@ -1,0 +1,10 @@
+##
+# "Image" element
+#
+prototype(Quickstart.Site:Content.Image) < prototype(Neos.Neos:ContentComponent) {
+    renderer = afx`
+        <div>
+            <Quickstart.Site:Component.Molecule.Figure />
+        </div>
+    `
+}

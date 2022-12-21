@@ -1,0 +1,10 @@
+'Quickstart.Site:Content.TextWithImage':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:TextMixin': true
+    'Neos.NodeTypes.BaseMixins:ImageMixin': true
+    'Neos.NodeTypes.BaseMixins:ImageCaptionMixin': true
+  ui:
+    label: 'Text mit Bild'
+    icon: 'icon-picture'
+    position: 400

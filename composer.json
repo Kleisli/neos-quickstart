@@ -1,0 +1,58 @@
+{
+    "name": "kleisli/neos-quickstart",
+    "type": "project",
+    "description": "Neos Quickstart Distribution",
+    "license": "GPL-3.0-or-later",
+    "support": {
+    },
+    "config": {
+        "vendor-dir": "Packages/Libraries",
+        "bin-dir": "bin",
+        "allow-plugins": {
+            "neos/composer-plugin": true
+        }
+    },
+    "require": {
+        "neos/neos": "~8.1.0",
+        "neos/site-kickstarter": "~8.1.0",
+
+        "neos/neos-ui": "~8.1.0",
+        "neos/seo": "~3.0",
+        "neos/redirecthandler-neosadapter": "~4.2",
+        "neos/redirecthandler-databasestorage": "~5.0",
+        "neos/redirecthandler-ui": "~2.4",
+
+        "neos/cli-setup": "~8.1.0",
+        "neos/setup": "^5.0",
+        "neos/neos-setup": "~1.1.7",
+
+        "quickstart/site": "@dev"
+    },
+    "require-dev": {
+        "neos/buildessentials": "~8.1.0",
+        "mikey179/vfsstream": "^1.6",
+        "phpunit/phpunit": "^9.0",
+        "symfony/css-selector": "~2.0",
+        "neos/behat": "~8.1.0"
+    },
+    "repositories": {
+        "distributionPackages": {
+            "type": "path",
+            "url": "./DistributionPackages/*"
+        }
+    },
+    "suggest": {
+        "ext-pdo_sqlite": "For running functional tests out-of-the-box this is required"
+    },
+    "allow-plugins": {
+        "neos/composer-plugin": true,
+        "composer/package-versions-deprecated": true
+    },
+    "scripts": {
+        "post-create-project-cmd": "./flow welcome",
+        "post-update-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+        "post-install-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+        "post-package-update": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall",
+        "post-package-install": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall"
+    }
+}

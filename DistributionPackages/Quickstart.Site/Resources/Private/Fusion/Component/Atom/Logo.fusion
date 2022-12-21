@@ -1,0 +1,16 @@
+prototype(Quickstart.Site:Component.Atom.Logo) < prototype(Neos.Fusion:Component) {
+
+  aClass = ''
+
+  logoClass = ''
+
+  # Template
+  renderer = afx`
+    <a class={props.aClass} href="/">
+      <div class={"logo" + props.logoClass}>
+        <span class="name">Dreirosen</span>
+        <span class="name">bleibt!</span>
+      </div>
+    </a>
+  `
+}

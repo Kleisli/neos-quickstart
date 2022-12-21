@@ -1,0 +1,22 @@
+Neos:
+  Imagine:
+    driver: Imagick
+  Flow:
+    persistence:
+      backendOptions:
+        driver: pdo_mysql
+        host: db
+        dbname: db
+        user: db
+        password: db
+    # If you are running Flow within a Docker environment, you need to allow all proxies,
+    # because the container acts as such and the IP is variable.
+    # this is needed to enable https on port 443
+    http:
+      trustedProxies:
+        proxies: '*'
+  SwiftMailer:
+    transport:
+      type: 'Swift_SendmailTransport'
+      options:
+        command: '/usr/local/bin/mailhog sendmail -t --smtp-addr 127.0.0.1:1025'

@@ -1,0 +1,18 @@
+prototype(Quickstart.Site:Component.Molecule.Menu) < prototype(Neos.Fusion:Component) {
+
+  menuItems = Neos.Neos:MenuItems {
+    startingPoint = ${site}
+    maximumLevels = 2
+  }
+
+  # Template
+  renderer = afx`
+    <ul class="menu main vertical medium-horizontal" data-responsive-menu="accordion large-dropdown" data-submenu-toggle="true">
+      <Neos.Fusion:Loop items={props.menuItems} itemName="menuItem" @children="itemRenderer">
+        <li class={'navigation-item ' + (menuItem.state ? 'navigation-item--state-' + menuItem.state : '') }>
+          <Neos.Neos:NodeLink node={menuItem.node} />
+        </li>
+      </Neos.Fusion:Loop>
+    </ul>
+  `
+}
