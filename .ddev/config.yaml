@@ -31,7 +31,6 @@ hooks:
     - exec: ./flow neos.flow:package:rescan
     - exec: ./flow database:setcharset
     - exec: ./flow doctrine:migrate
-    - exec: npm install
 
 # Key features of ddev's config.yaml:
 
