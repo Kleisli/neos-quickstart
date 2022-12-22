@@ -8,8 +8,7 @@ prototype(Quickstart.Site:Component.Atom.Logo) < prototype(Neos.Fusion:Component
   renderer = afx`
     <a class={props.aClass} href="/">
       <div class={"logo" + props.logoClass}>
-        <span class="name">Dreirosen</span>
-        <span class="name">bleibt!</span>
+        <span class="name">Quickstart</span>
       </div>
     </a>
   `
