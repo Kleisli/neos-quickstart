@@ -69,13 +69,3 @@ $basta-main-color : #abdd00;
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
-
-@import 'base';
-@import 'navigation';
-@import 'news';
-@import 'persons';
-@import 'powermail';
-@import 'teasers';
-@import 'spinoff_site';
-@import 'typography';
-@import 'slick';

@@ -1,7 +1,7 @@
 var gulp          = require('gulp');
 var $             = require('gulp-load-plugins')();
 var autoprefixer  = require('autoprefixer');
-const sass = require('gulp-sass')(require('node-sass'));
+var sass          = require('gulp-sass')(require('node-sass'));
 
 var sassPaths = [
     'node_modules/foundation-sites/scss',
