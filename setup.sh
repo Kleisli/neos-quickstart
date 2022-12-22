@@ -15,10 +15,12 @@ mv DistributionPackages/Quickstart.Site DistributionPackages/${NEOS_PACKAGE_NAME
 # find ./.ddev -type f -name 'config.yaml' | xargs sed -i '' "s/quickstart/${PROJECT_NAME}/g"
 # find . -type f -name 'composer.json' | xargs sed -i '' "s/quickstart\/site/${COMPOSER_PACKAGE_NAME}/g"
 # find . -type f ! -name 'setup.sh' | xargs sed -i '' "s/Quickstart\.Site/${NEOS_PACKAGE_NAME}/g"
+# find . -type f ! -name 'setup.sh' | xargs sed -i '' "s/Quickstart/${1}/g"
 # Linux / GNU:
 find ./.ddev -type f -name 'config.yaml' | xargs sed -i "s/quickstart/${PROJECT_NAME}/g"
 find . -type f -name 'composer.json' | xargs sed -i "s/quickstart\/site/${COMPOSER_PACKAGE_NAME}/g"
 find . -type f ! -name 'setup.sh' | xargs sed -i "s/Quickstart\.Site/${NEOS_PACKAGE_NAME}/g"
+find . -type f ! -name 'setup.sh' | xargs sed -i "s/Quickstart/${1}/g"
 
 ddev start
 ddev flow site:create ${PROJECT_NAME} ${NEOS_PACKAGE_NAME} ${NEOS_PACKAGE_NAME}:Document.HomePage
