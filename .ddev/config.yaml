@@ -11,7 +11,7 @@ php_version: "8.1"
 database:
   type: mariadb
   version: "10.4"
-nodejs_version: "16"
+nodejs_version: "14"
 xdebug_enabled: false
 use_dns_when_possible: true
 additional_hostnames: []
@@ -31,6 +31,7 @@ hooks:
     - exec: ./flow neos.flow:package:rescan
     - exec: ./flow database:setcharset
     - exec: ./flow doctrine:migrate
+    - exec: npm install
 
 # Key features of ddev's config.yaml:
 
