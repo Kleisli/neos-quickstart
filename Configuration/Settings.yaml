@@ -1,0 +1,11 @@
+Neos:
+  Imagine:
+    driver: Imagick
+  Flow:
+    persistence:
+      backendOptions:
+        driver: pdo_mysql
+        host: '%env:FLOW_DATABASE_HOST%'
+        dbname: '%env:FLOW_DATABASE_NAME%'
+        user: '%env:FLOW_DATABASE_USER%'
+        password: '%env:FLOW_DATABASE_PASSWORD%'

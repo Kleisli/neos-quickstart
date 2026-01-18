@@ -12,38 +12,43 @@
             "neos/composer-plugin": true
         }
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
-        "neos/neos": "~8.1.0",
-        "neos/site-kickstarter": "~8.1.0",
-
-        "neos/neos-ui": "~8.1.0",
-        "neos/seo": "~3.0",
-        "neos/redirecthandler-neosadapter": "~4.2",
-        "neos/redirecthandler-databasestorage": "~5.0",
-        "neos/redirecthandler-ui": "~2.4",
-
-        "neos/cli-setup": "~8.1.0",
-        "neos/setup": "^5.0",
-        "neos/neos-setup": "~1.1.7",
-
-        "quickstart/site": "@dev"
+        "neos/neos": "^9.0",
+        "neos/contentgraph-doctrinedbaladapter": "^9.0",
+        "neos/neos-ui": "^9.0",
+        "neos/seo": "~4.1",
+        "shel/neos-logs": "^1.4",
+        "neos/redirecthandler": "^6.0",
+        "neos/redirecthandler-databasestorage": "*",
+        "neos/redirecthandler-neosadapter": "^5.0",
+        "neos/redirecthandler-ui": "^3.0",
+        "quickstart/site" : "@dev"
     },
     "require-dev": {
-        "neos/buildessentials": "~8.1.0",
+        "neos/buildessentials": "^9.0",
         "mikey179/vfsstream": "^1.6",
-        "phpunit/phpunit": "^9.0",
-        "symfony/css-selector": "~2.0",
-        "neos/behat": "~8.1.0"
+        "phpunit/phpunit": "^11.5",
+        "phpstan/phpstan": "^2.1",
+        "squizlabs/php_codesniffer": "^4.0",
+        "neos/neos-setup": "^4.0",
+        "neos/site-kickstarter": "^9.0",
+        "shel/nodetypes-analyzer": "^2.1",
+        "carbon/pipeline": "^0.18",
+        "sitegeist/magicwand": "^4.5",
+        "sitegeist/chantalle": "^2.0"
     },
-    "repositories": {
-        "distributionPackages": {
+    "repositories": [
+        {
             "type": "path",
             "url": "./DistributionPackages/*"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Kleisli/Kubbar"
         }
-    },
-    "suggest": {
-        "ext-pdo_sqlite": "For running functional tests out-of-the-box this is required"
-    },
+    ],
     "allow-plugins": {
         "neos/composer-plugin": true,
         "composer/package-versions-deprecated": true

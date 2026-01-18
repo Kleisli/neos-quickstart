@@ -4,9 +4,7 @@
     "type": "neos-site",
     "require": {
         "neos/neos": "*",
-        "neos/nodetypes-basemixins": "^8.0 || dev-master",
-        "neos/form-builder": "^2.3",
-        "neos/swiftmailer": "*"
+        "carbon/includeassets": "^6.3"
     },
     "suggest": {
         "neos/seo": "*"

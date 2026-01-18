@@ -2,6 +2,7 @@
 # by Neos. You can customize this to your needs.
 'Quickstart.Site:Document.Page':
   superTypes:
+    'Neos.Neos:Site' : true
     'Neos.Neos:Document': true
   ui:
     icon: file

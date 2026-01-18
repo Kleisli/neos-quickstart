@@ -15,8 +15,8 @@ Neos:
     http:
       trustedProxies:
         proxies: '*'
-  SwiftMailer:
-    transport:
-      type: 'Swift_SendmailTransport'
-      options:
-        command: '/usr/local/bin/mailhog sendmail -t --smtp-addr 127.0.0.1:1025'
+
+Sitegeist:
+  Neos:
+    SymfonyMailer:
+      dsn: 'smtp://127.0.0.1:1025'

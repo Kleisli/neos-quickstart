@@ -1,0 +1,27 @@
+Carbon:
+  IncludeAssets:
+    Packages:
+      # The keys get sorted first by numbers, then by characters.
+      aa_Theme:
+        # Because no Package is defined, SitePackage from the default
+        # will be used and will set to the site package.
+
+        # Asset files which get loaded in live and backend view
+        General:
+          # These assets get loaded in the <head> (at the start)
+          HeadStart:
+            #- Favicons.html
+
+            # If a string starts with < and ends with an >, it get's inlucded as plain HTML
+            - <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+          # These assets get loaded in the <head> (at the end)
+          Head:
+            - site.css
+
+          # This assets get loaded at the start of the <body>
+          BodyStart: []
+
+          # This assets get loaded at the end of the <body>
+          Body:
+            - site.js

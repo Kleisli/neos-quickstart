@@ -1,5 +1,5 @@
 # Setup 
-0. ```./setup.sh MyProject```
+0. ```./quickstart.sh MyProject```
 
 ## Frontend development
 1. ```ddev npm install```

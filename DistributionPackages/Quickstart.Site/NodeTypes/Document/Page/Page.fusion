@@ -1,0 +1,17 @@
+prototype(Quickstart.Site:Document.Page) < prototype(Neos.Neos:Page){
+
+    body = NeosLoves.Foundation:Component.Template.Default {
+        @context.node = ${this.node}
+
+        content = Neos.Fusion:Component {
+            main = Neos.Neos:PrimaryContent {
+                nodePath = 'main'
+            }
+
+            renderer = afx`
+                {props.main}
+            `
+        }
+    }
+}
+

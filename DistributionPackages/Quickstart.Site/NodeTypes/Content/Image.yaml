@@ -1,9 +1,0 @@
-'Quickstart.Site:Content.Image':
-  superTypes:
-    'Neos.Neos:Content': true
-    'Neos.NodeTypes.BaseMixins:ImageMixin': true
-    'Neos.NodeTypes.BaseMixins:ImageCaptionMixin': true
-  ui:
-    label: 'Image'
-    icon: 'icon-picture'
-    position: 300

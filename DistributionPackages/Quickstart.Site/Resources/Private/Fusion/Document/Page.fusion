@@ -1,1 +1,0 @@
-prototype(Quickstart.Site:Document.Page) < prototype(Quickstart.Site:Document.AbstractPage)
