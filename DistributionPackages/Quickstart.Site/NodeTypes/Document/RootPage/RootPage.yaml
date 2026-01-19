@@ -1,5 +1,5 @@
 # This is a custom document node type which has been auto-generated for your site package
 # by Neos. You can customize this to your needs.
-'Quickstart.Site:Document.Page':
+'Quickstart.Site:Document.RootPage':
   superTypes:
-    'Kleisli.Kubbar:Document.Page': true
+    'Kleisli.Kubbar:Document.RootPage': true

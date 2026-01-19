@@ -1,0 +1,12 @@
+##
+# This prototypes object are sequenctially rendered as strings
+# and output to form the the html response.
+#
+# For all the base data, see Neos.Neos:Page
+##
+prototype(Quickstart.Site:Component.Webpage.Default) < prototype(Kleisli.Kubbar:Component.Webpage.Default) {
+
+    body = Kleisli.Kubbar:Component.Template.Default {
+        content = ''
+    }
+}

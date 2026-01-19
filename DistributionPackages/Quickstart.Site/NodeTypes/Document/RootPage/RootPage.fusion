@@ -1,4 +1,4 @@
-prototype(Quickstart.Site:Document.Page) < prototype(Neos.Neos:Page){
+prototype(Quickstart.Site:Document.Page) < prototype(Kleisli.Kubbar:Component.Webpage.Default){
 
     body = Kleisli.Kubbar:Component.Template.Default {
         content = afx`

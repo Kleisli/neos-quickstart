@@ -24,6 +24,7 @@
         "neos/redirecthandler-databasestorage": "*",
         "neos/redirecthandler-neosadapter": "^5.0",
         "neos/redirecthandler-ui": "^3.0",
+        "kleisli/kubbar" : "dev-main",
         "quickstart/site" : "@dev"
     },
     "require-dev": {
